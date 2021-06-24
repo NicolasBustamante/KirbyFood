@@ -102,57 +102,27 @@ class OrderCard extends StatelessWidget {
                             SizedBox(
                               width: 5.0,
                             ),
-                            Text(
-                              "x",
-                              style: TextStyle(
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            )
+                            InkWell(
+                              onTap: () {},
+                              child: Text(
+                                "x",
+                                style: TextStyle(
+                                    color: Colors.red,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
                           ],
                         ),
-                      ),
-                      Row(
-                        children: <Widget>[
-                          Text(
-                            "Pollo",
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
-                          Text(
-                            "x",
-                            style: TextStyle(
-                                color: Colors.red, fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      ),
-                      Row(
-                        children: <Widget>[
-                          Text(
-                            "Pollo",
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 5.0,
-                          ),
-                          Text(
-                            "x",
-                            style: TextStyle(
-                                color: Colors.red, fontWeight: FontWeight.bold),
-                          )
-                        ],
                       ),
                     ],
                   ),
                 ),
               ],
+            ),
+            Spacer(),
+            GestureDetector(
+              onTap: () {},
+              child: Icon(Icons.cancel, color: Colors.grey),
             ),
           ],
         ),

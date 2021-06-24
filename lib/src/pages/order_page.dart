@@ -17,9 +17,67 @@ class _OrderPageState extends State<OrderPage> {
     return ListView(
       padding: EdgeInsets.symmetric(horizontal: 10.0),
       scrollDirection: Axis.vertical,
-      children: <Widget>[
-        OrderCard(),
-      ],
+      children: <Widget>[OrderCard(), OrderCard(), _buildTotalContainer()],
     );
+  }
+
+  Widget _buildTotalContainer() {
+    return Container(
+        child: Column(
+      children: <Widget>[
+        /* ListTile(
+          leading: Text("Total Pedido",
+              style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey)),
+          trailing: Text("23.0",
+              style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black)),
+        ),
+        ListTile(
+          leading: Text("Total Pedido",
+              style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey)),
+          trailing: Text("23.0",
+              style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black)),
+        ),
+        ListTile(
+          leading: Text("Total Pedido",
+              style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.grey)),
+          trailing: Text("23.0",
+              style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black)),
+        ), */
+
+        Row(
+          children: <Widget>[
+            Text("Total Pedido",
+                style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey)),
+            Spacer(),
+            Text("23.0",
+                style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black)),
+          ],
+        ),
+      ],
+    ));
   }
 }
