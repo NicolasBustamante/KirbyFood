@@ -59,17 +59,6 @@ class _MainScreenState extends State<MainScreen> {
         ],
       ),
       body: currentPage,
-      appBar: currentTabIndex == 1
-          ? AppBar(
-              title: Text(
-                "Tu Carro de Compras",
-                style: TextStyle(color: Colors.black),
-              ),
-              centerTitle: true,
-              backgroundColor: Colors.white,
-              elevation: 0.0,
-            )
-          : null,
     );
   }
 }
