@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import '../pages/signup_page.dart';
 
-class SignInPage extends StatefulWidget {
+class SignUpPage extends StatefulWidget {
   @override
-  _SignInPageState createState() => _SignInPageState();
+  _SignUpPageState createState() => _SignUpPageState();
 }
 
-class _SignInPageState extends State<SignInPage> {
+class _SignUpPageState extends State<SignUpPage> {
   bool _toggleVisibility = true;
 
   Widget _buildEmailTextField() {
@@ -51,26 +50,11 @@ class _SignInPageState extends State<SignInPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
-                "Kirby Comida Rápida",
+                "Registrate en Kirby!",
                 style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: 100.0,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  Text(
-                    "¿Olvido su Contraseña?",
-                    style: TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.blueAccent,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 10.0,
               ),
               Card(
                 elevation: 5.0,
@@ -97,7 +81,7 @@ class _SignInPageState extends State<SignInPage> {
                     borderRadius: BorderRadius.circular(25.0)),
                 child: Center(
                   child: Text(
-                    "Iniciar Sesión",
+                    "Registrarme",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18.0,
@@ -123,18 +107,12 @@ class _SignInPageState extends State<SignInPage> {
                   SizedBox(
                     width: 10.0,
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (BuildContext context) => SignUpPage()));
-                    },
-                    child: Text(
-                      "Registrate",
-                      style: TextStyle(
-                        color: Colors.blueAccent,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18.0,
-                      ),
+                  Text(
+                    "Registrate",
+                    style: TextStyle(
+                      color: Colors.blueAccent,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18.0,
                     ),
                   ),
                 ],
