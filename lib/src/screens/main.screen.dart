@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:kirby_appfood/src/scoped-model/food_model.dart';
 
 //Pages
 
-import '../pages/home.page.dart';
+import '../pages/home_page.dart';
 import '../pages/order_page.dart';
 import '../pages/favorite_page.dart';
 import '../pages/profile_page.dart';
 
 class MainScreen extends StatefulWidget {
+  final FoodModel foodModel;
+
+  MainScreen({this.foodModel});
+
   @override
   _MainScreenState createState() => _MainScreenState();
 }
@@ -25,8 +30,8 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
+    widget.foodModel.fetchFoods();
     homePage = HomePage();
     orderPage = OrderPage();
     favoritePage = FavoritePage();

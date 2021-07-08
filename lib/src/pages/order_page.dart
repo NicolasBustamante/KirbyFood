@@ -1,8 +1,6 @@
-import 'dart:html';
 import 'package:kirby_appfood/src/pages/signin_page.dart';
 
 import 'package:flutter/material.dart';
-import 'package:kirby_appfood/src/app.dart';
 
 //Widget
 import '../widgets/order_card.dart';

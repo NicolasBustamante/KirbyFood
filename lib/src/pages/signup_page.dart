@@ -24,7 +24,7 @@ class _SignUpPageState extends State<SignUpPage> {
   Widget _buildUserTextField() {
     return TextFormField(
       decoration: InputDecoration(
-          hintText: "Correo Electronico",
+          hintText: "Nombre de Usuario",
           hintStyle: TextStyle(
             color: Color(0xFFBDC2CB),
             fontSize: 18.0,
